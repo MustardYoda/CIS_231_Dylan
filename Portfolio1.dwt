@@ -37,17 +37,33 @@ Do the following if you're using your customized build of modernizr (http://www.
   <figure class="fluid hero_Image">This is the content for Layout Figure Tag "hero_Image"
     <figcaption>This is the caption for Layout Figure Tag</figcaption>
   </figure>
-  <nav class="fluid nav">This is the content for Layout Nav Tag "nav"</nav>
+  <nav class="fluid nav"><!--This is the content for Layout Nav Tag "nav"-->
+    <div align="center">
+      <input type="button" name="resume_btn" id="nav_btn_1" value="Resume">
+      <input type="button" name="activities" id="nav_btn_2" value="Activities">
+      <input type="button" name="Experience" id="nav_btn_3" value="Experience">
+      <input type="button" name="button4" id="nav_btn_4" value="Button">
+      <input type="button" name="button5" id="nav_btn_5" value="Button">
+    </div>
+  </nav>
   <section class="fluid about_Section">
     <p>This is the content for Layout Section Tag "about_Section"</p>
-    <table width="75%" border="3" cellspacing="5" cellpadding="5">
-      <!-- TemplateBeginRepeat name="About Region" -->
-        <tr>
-          <td><!-- TemplateBeginEditable name="EditRegion3" -->&nbsp;<!-- TemplateEndEditable --></td>
-          <td><!-- TemplateBeginEditable name="EditRegion4" -->&nbsp;<!-- TemplateEndEditable --></td>
-      </tr>
-      <!-- TemplateEndRepeat -->
-    </table>
+    <div align="center">
+      <table width="75%" border="3" cellspacing="5" cellpadding="5">
+        <!-- TemplateBeginRepeat name="About Region" -->
+          <tr>
+            <td><!-- TemplateBeginEditable name="EditRegion3" -->&nbsp;
+              <article class="fluid about_Text">This is the content for Layout Article Tag "about_Text"</article>
+            <!-- TemplateEndEditable --></td>
+            <td><!-- TemplateBeginEditable name="EditRegion4" -->&nbsp;
+              <figure class="fluid about_Image">This is the content for Layout Figure Tag "about_Image"
+                <figcaption>Small Image of Dylan</figcaption>
+              </figure>
+            <!-- TemplateEndEditable --></td>
+        </tr>
+        <!-- TemplateEndRepeat -->
+      </table>
+    </div>
   </section>
 </div>
 </body>
